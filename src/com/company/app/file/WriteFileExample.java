@@ -1,0 +1,34 @@
+package com.company.app.file;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class WriteFileExample {
+  public static void main(String[] args) {
+
+    File file = new File("./xml/file.txt");
+    String content = "This is the text content example \n";
+
+//    FileOutputStream(File file, boolean append) //To add content 
+    try (FileOutputStream fop = new FileOutputStream(file,true)) {
+
+      // if file doesn't exists, then create it
+      if (!file.exists()) {
+        file.createNewFile();
+      }
+
+      // get the content in bytes
+      byte[] contentInBytes = content.getBytes();
+
+      fop.write(contentInBytes);
+      fop.flush();
+      fop.close();
+
+      System.out.println("Done");
+
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+}

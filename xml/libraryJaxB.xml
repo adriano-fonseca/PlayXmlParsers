@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library>
+    <book>
+        <author>Adriano Fonseca</author>
+        <title>Learning XML DOM Parsing</title>
+    </book>
+    <book>
+        <author>Katy Sierra</author>
+        <title>Learning Java</title>
+    </book>
+    <name>Public Library</name>
+</library>
