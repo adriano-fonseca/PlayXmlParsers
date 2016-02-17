@@ -15,5 +15,7 @@ With it you can read and write xml, but its not so straight when you need to pop
 With this usually you read files because it is much more efficient in consume memory terms.
 
 
-# JaxB - Its a good option when you want populate your POJOS or create XML from your POJOS
+# JaxB -  Java Architecture for XML Binding
+
+Its a good option when you want populate your POJOS or create XML from your POJOS
 
